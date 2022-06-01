@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Nav } from 'react-bootstrap';
 
 const Navbar = () => {
     return (
@@ -13,7 +14,7 @@ const Navbar = () => {
     </Nav>
     </Container>
   </Navbar> 
-        </div>
+</div>
     );
 };
 
