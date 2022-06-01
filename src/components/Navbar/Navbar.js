@@ -1,20 +1,15 @@
 import React from 'react';
-import { Container, Nav } from 'react-bootstrap';
+import { Button, Col, Row } from "react-bootstrap";
 
 const Navbar = () => {
     return (
-        <div>
-    <Navbar bg="dark" variant="dark">
-    <Container>
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <Nav className="me-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-    </Nav>
-    </Container>
-  </Navbar> 
-</div>
+        <>
+        <Row className="mx-0">
+  <Button as={Col} variant="primary">Button #1</Button>
+  <Button as={Col} variant="secondary" className="mx-2">Button #2</Button>
+  <Button as={Col} variant="success">Button #3</Button>
+</Row>
+       </>
     );
 };
 
