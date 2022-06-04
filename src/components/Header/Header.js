@@ -12,9 +12,9 @@ const Header = () => {
     <Navbar.Brand href="#home">Navbar</Navbar.Brand>
     <Nav className="me-auto">
       
+      <Nav.Link as={Link}  to="/home" >Home</Nav.Link>
       <Nav.Link as={Link}  to="/task">Task</Nav.Link>
-      <Nav.Link href="#features">Show task</Nav.Link>
-      <Nav.Link href="#pricing">Info</Nav.Link>
+      <Nav.Link as={Link}  to="/update">Update</Nav.Link>
     </Nav>
     </Container>
   </Navbar>
