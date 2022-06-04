@@ -1,5 +1,6 @@
 import React from 'react';
 import {Navbar,Container,Nav} from 'react-bootstrap';
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 
 
 const Header = () => {
@@ -7,10 +8,11 @@ const Header = () => {
         <div>
     <Navbar bg="dark" variant="dark">
     <Container>
+      
     <Navbar.Brand href="#home">Navbar</Navbar.Brand>
     <Nav className="me-auto">
       
-      <Nav.Link href="/add">Task</Nav.Link>
+      <Nav.Link as={Link}  to="/task">Task</Nav.Link>
       <Nav.Link href="#features">Show task</Nav.Link>
       <Nav.Link href="#pricing">Info</Nav.Link>
     </Nav>
