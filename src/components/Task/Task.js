@@ -24,7 +24,14 @@ const Task = () => {
      }
     const handleSubmit = e =>{
         e.preventDefault();
-        console.log("submit button");
+        const userData = {
+            name:user,
+            email:email,
+            password:password
+
+        }
+       
+        console.log(userData);
     }
     return (
         <div>
@@ -43,7 +50,7 @@ const Task = () => {
     <Form.Label>Password</Form.Label>
     <Form.Control type="password" onChange={handlePassword} placeholder="Password" />
     </Form.Group>
-  <Button variant="primary" type="submit">
+    <Button variant="primary" type="submit">
     Submit
   </Button>
 </Form>
