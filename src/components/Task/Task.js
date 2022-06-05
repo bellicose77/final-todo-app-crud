@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 
 const Task = () => {
-     const [user,setName]=useState("")
+     const [user,setName]=useState("");
+     const [email,setEmail] = useState("");
+     const [password,setPassword] = useState("");
     const handleSubmit = e =>{
         e.preventDefault();
         console.log("submit button");
