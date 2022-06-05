@@ -11,6 +11,10 @@ const Task = () => {
          setUser(Name);
          console.log(user);
      }
+
+     const handleEmail = e =>{
+
+     }
     const handleSubmit = e =>{
         e.preventDefault();
         console.log("submit button");
