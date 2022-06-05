@@ -18,7 +18,9 @@ const Task = () => {
          console.log(Email);
      };
      const handlePassword= e =>{
-         
+         const Password = e.target.value;
+         setPassword(Password);
+         console.log(password);
      }
     const handleSubmit = e =>{
         e.preventDefault();
