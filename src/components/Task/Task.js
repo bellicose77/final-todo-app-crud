@@ -2,10 +2,14 @@ import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 
 const Task = () => {
+    const handleSubmit = e =>{
+        e.preventDefault();
+        console.log("submit button");
+    }
     return (
         <div>
             <h2>Add Your task:</h2>
-    <Form>
+    <Form onSubmit={handleSubmit}>
     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Name</Form.Label>
     <Form.Control type="text" placeholder="Enter name" />
