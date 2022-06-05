@@ -10,7 +10,7 @@ const Task = () => {
         <div>
             <h2>Add Your task:</h2>
     <Form onSubmit={handleSubmit}>
-    <Form.Group className="mb-3" controlId="formBasicEmail">
+    <Form.Group className="mb-3">
     <Form.Label>Name</Form.Label>
     <Form.Control type="text" placeholder="Enter name" />
   </Form.Group>
