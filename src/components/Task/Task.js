@@ -13,7 +13,7 @@ const Task = () => {
      }
 
      const handleEmail = e =>{
-
+         const Email = e.target.value;
      }
     const handleSubmit = e =>{
         e.preventDefault();
