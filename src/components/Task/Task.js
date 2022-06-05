@@ -30,6 +30,19 @@ const Task = () => {
             password:password
 
         }
+        fetch('http://localhost:5000/task',
+        {
+            method:'POST',
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(userData)
+
+        }
+        .then(res =>res.json())
+        .then(data=>console.log(data))
+        
+        )
        
         //console.log(userData);
     }
