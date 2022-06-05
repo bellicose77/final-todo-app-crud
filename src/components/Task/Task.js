@@ -39,10 +39,11 @@ const Task = () => {
             body: JSON.stringify(userData)
 
         }
+       
+        )
         .then(res =>res.json())
         .then(data=>console.log(data))
         
-        )
        
         //console.log(userData);
     }
