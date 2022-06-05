@@ -14,6 +14,8 @@ const Task = () => {
 
      const handleEmail = e =>{
          const Email = e.target.value;
+         setEmail(Email);
+         console.log(Email);
      }
     const handleSubmit = e =>{
         e.preventDefault();
