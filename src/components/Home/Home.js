@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
+import DataShow from '../DataShow/DataShow';
 
 const Home = () => {
     const [tasks,setTasks] = useState([]);
@@ -24,10 +25,7 @@ const Home = () => {
   </thead>
   <tbody>
       {
-          tasks.map(task=><tr><td>{task.name}</td>
-              <td>{task.email}</td>
-              <td>{task.password}</td>
-          </tr>)
+          tasks.map(task=><DataShow key={task._id} task={task}></DataShow>)
       }
      
    

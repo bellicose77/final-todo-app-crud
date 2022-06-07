@@ -1,10 +1,16 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 
-const DataShow = () => {
+const DataShow = ({name,password,email}) => {
     return (
-        <div>
+        <>
+            <tr>
+                <td>name</td>
+                <td>{email}</td>
+                <td>{password}</td>
+            </tr>
             
-        </div>
+        </>
     );
 };
 
