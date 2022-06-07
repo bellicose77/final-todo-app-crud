@@ -1,8 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 
 const Home = () => {
     const [tasks,setTasks] = useState([]);
+    useEffect(()=>{
+        fetch('http://localhost:5000/tasks')
+        .then(res=>res.json())
+        .then(data=>console.log(data))
+    },[])
+
+
     return (
         <div>
         <Table striped bordered hover variant="dark">
