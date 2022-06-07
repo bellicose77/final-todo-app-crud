@@ -22,9 +22,17 @@ const Home = () => {
     </tr>
   </thead>
   <tbody>
+      <tr>
       {
-           tasks.map(task=><tr>{task.name}</tr>)
+           tasks.map(task=>{
+            <td>{task.name}</td>
+            <td>{task.email}</td>
+           }
+          
+           )
       }
+      </tr>
+     
    
     
   </tbody>
