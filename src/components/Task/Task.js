@@ -42,7 +42,11 @@ const Task = () => {
        
         )
         .then(res =>res.json())
-        .then(data=>console.log(data))
+        .then(data=>{
+            if(data.insertedId){
+                alert("data inserted successfully");
+            }
+        })
         
        
         //console.log(userData);
