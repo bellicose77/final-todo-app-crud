@@ -19,11 +19,15 @@ const Home = () => {
       <th>First Name</th>
       <th>Email </th>
       <th>Password</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody>
       {
-          tasks.map(task=><tr><td>{task.name}</td></tr>)
+          tasks.map(task=><tr><td>{task.name}</td>
+              <td>{task.email}</td>
+              <td>{task.password}</td>
+          </tr>)
       }
      
    
