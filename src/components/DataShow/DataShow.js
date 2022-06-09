@@ -3,8 +3,8 @@ import { Button } from 'react-bootstrap';
 
 const DataShow = (props) => {
     const {_id,name,email,password} = props.task;
-    const handleDelete=()=>{
-        
+    const handleDelete=(id)=>{
+        console.log(id);
     }
     return (
         <>
