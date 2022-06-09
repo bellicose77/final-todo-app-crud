@@ -6,12 +6,9 @@ const DataShow = (props) => {
     const handleDelete=(id)=>{
         console.log(id);
         fetch(`http://localhost:5000/tasks/${id}`,{
-            method:'DELETE',
-            headers:{
-                'Content-Type':'application/json'
-            },
-            body: 'Stringify.json()'
-        })
+            method:'DELETE'
+            
+        });
     }
     return (
         <>
