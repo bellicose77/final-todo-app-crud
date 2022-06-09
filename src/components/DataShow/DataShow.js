@@ -3,9 +3,10 @@ import { Button } from 'react-bootstrap';
 
 const DataShow = (props) => {
     const {_id,name,email,password} = props.task;
+
     const handleDelete=(id)=>{
         console.log(id);
-        fetch(`http://localhost:5000/tasks/${id}`,{
+        fetch(`http://localhost:5000/task/${id}`,{
             method:'DELETE'
             
         });
