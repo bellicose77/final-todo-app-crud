@@ -9,7 +9,9 @@ const DataShow = (props) => {
         fetch(`http://localhost:5000/task/${id}`,{
             method:'DELETE'
             
-        });
+        })
+        .then(res=>res.json())
+        .then(data=>console.log(data))
     }
     return (
         <>
