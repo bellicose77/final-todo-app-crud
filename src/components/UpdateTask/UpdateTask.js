@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import {useParams} from 'react-router-dom';
 const UpdateTask = () => {
-
+    const [singletask,setSingletask]=useState({})
     const {id} = useParams();
     useEffect(()=>{
-        
+        fetch(`http://localhost:5000/tasks/${id}`)
+        .then(res=>res.json())
+        .then(data=>setSingletask(data))
     },[])
     return (
         <>
