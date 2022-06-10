@@ -13,7 +13,7 @@ const DataShow = ({task,handleDelete}) => {
                 <td>{email}</td>
                 <td>{password}</td>
                 <td><Button onClick={()=>handleDelete(_id)}>X</Button>
-                <Link to='/update/:id'>Update</Link>
+                <Link to={`/update/${_id}`}>Update</Link>
                 </td>
             </tr>
             
