@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import {useParams} from 'react-router-dom';
 const UpdateTask = () => {
+
     const {id} = useParams();
+    useEffect(()=>{
+        
+    },[])
     return (
         <>
-            <h2>this is update:{id}</h2>
+     <h2>this is update:{id}</h2>
     <Form >
     <Form.Group className="mb-3">
     <Form.Label>Name</Form.Label>
