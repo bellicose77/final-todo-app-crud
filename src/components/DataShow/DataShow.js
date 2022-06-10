@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const DataShow = ({task,handleDelete}) => {
     const {_id,name,email,password} = task;
@@ -11,7 +12,9 @@ const DataShow = ({task,handleDelete}) => {
                 <td>{name}</td>
                 <td>{email}</td>
                 <td>{password}</td>
-                <td><Button onClick={()=>handleDelete(_id)}>X</Button><Button>Update</Button></td>
+                <td><Button onClick={()=>handleDelete(_id)}>X</Button>
+                <Link to>Update</Link>
+                </td>
             </tr>
             
         </>
