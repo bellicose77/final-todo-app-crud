@@ -4,6 +4,7 @@ import DataShow from '../DataShow/DataShow';
 
 const Home = () => {
     const [tasks,setTasks] = useState([]);
+
     useEffect(()=>{
         fetch('http://localhost:5000/tasks')
         .then(res=>res.json())
@@ -20,6 +21,8 @@ const Home = () => {
         if(data.deletedCount)
         {
           alert("deleted successfully");
+          const lefttask=tasks.filter(task=>task._id!=id)
+          setTasks(lefttask);
         }
       })
   }
