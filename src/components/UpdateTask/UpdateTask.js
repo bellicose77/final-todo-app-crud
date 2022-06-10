@@ -22,6 +22,10 @@ const UpdateTask = () => {
            setSingletask(useremail);
     }
     const handlePassword = e =>{
+        const updatepassword = e.target.value;
+        const useremail = {...singletask}
+        useremail.password = updatepassword;
+        setSingletask(useremail)
 
     }
     return (
