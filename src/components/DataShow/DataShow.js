@@ -1,18 +1,10 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 
-const DataShow = (props) => {
-    const {_id,name,email,password} = props.task;
+const DataShow = ({task,handleDelete}) => {
+    const {_id,name,email,password} = task;
 
-    const handleDelete=(id)=>{
-        console.log(id);
-        fetch(`http://localhost:5000/task/${id}`,{
-            method:'DELETE'
-            
-        })
-        .then(res=>res.json())
-        .then(data=>console.log(data))
-    }
+    
     return (
         <>
             <tr>
