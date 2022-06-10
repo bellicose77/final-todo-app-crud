@@ -29,7 +29,7 @@ const UpdateTask = () => {
 
     }
     const handleUpdateSubmit = e =>{
-        
+        e.preventDefault();
         fetch(`http://localhost:5000/update/${id}`,{
             
         method:'PUT',
@@ -39,7 +39,8 @@ const UpdateTask = () => {
             body: JSON.stringify(singletask)
 
         })
-        e.preventDefault();
+        .then(res=>res.json())
+        .then(data=>console.log(data))
     }
     return (
         <>
