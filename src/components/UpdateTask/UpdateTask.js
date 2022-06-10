@@ -25,14 +25,17 @@ const UpdateTask = () => {
         const updatepassword = e.target.value;
         const useremail = {...singletask}
         useremail.password = updatepassword;
-        setSingletask(useremail)
+        setSingletask(useremail);
 
+    }
+    const handleUpdateSubmit = e =>{
+        e.preventDafult();
     }
     return (
         <>
      <h2>this is update:{id}</h2>
      <p>{singletask.name}</p>
-    <Form >
+    <Form onSubmit={handleUpdateSubmit}>
     <Form.Group className="mb-3">
     <Form.Label>Name</Form.Label>
     <Form.Control type="text" onChange={handleName} value={singletask.name} placeholder="Enter name" />
