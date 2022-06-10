@@ -21,7 +21,7 @@ const Home = () => {
         if(data.deletedCount)
         {
           alert("deleted successfully");
-          const lefttask=tasks.filter(task=>task._id!=id)
+          const lefttask=tasks.filter(task=>task._id!==id)
           setTasks(lefttask);
         }
       })
