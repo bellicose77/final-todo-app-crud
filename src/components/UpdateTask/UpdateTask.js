@@ -11,6 +11,8 @@ const UpdateTask = () => {
     },[]);
     const handleName = e =>{
         const updateName = e.target.value;
+        const username={...singletask}
+        username.name=updateName;
     }
     return (
         <>
