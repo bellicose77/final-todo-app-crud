@@ -36,7 +36,7 @@ const UpdateTask = () => {
             headers:{
                 'Content-Type': 'application/json'
             },
-            body:'Stringify.json(singletask)'
+            body: JSON.stringify(singletask)
 
         })
         e.preventDefault();
