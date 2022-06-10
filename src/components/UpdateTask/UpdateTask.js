@@ -8,7 +8,10 @@ const UpdateTask = () => {
         fetch(`http://localhost:5000/task/${id}`)
         .then(res=>res.json())
         .then(data=>setSingletask(data))
-    },[])
+    },[]);
+    const handleName = e =>{
+        const updateName = e.target.value;
+    }
     return (
         <>
      <h2>this is update:{id}</h2>
@@ -16,7 +19,7 @@ const UpdateTask = () => {
     <Form >
     <Form.Group className="mb-3">
     <Form.Label>Name</Form.Label>
-    <Form.Control type="text" value={singletask.name} placeholder="Enter name" />
+    <Form.Control type="text" onChange={handleName} value={singletask.name} placeholder="Enter name" />
    </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
