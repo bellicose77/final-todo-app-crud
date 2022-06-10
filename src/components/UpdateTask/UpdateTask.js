@@ -29,7 +29,16 @@ const UpdateTask = () => {
 
     }
     const handleUpdateSubmit = e =>{
-        e.preventDafult();
+        e.preventDefault();
+        fetch(`http://localhost:5000/update/${id}`,{
+            method:'PUT',
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body:'Stringify.json()'
+
+        })
+
     }
     return (
         <>
