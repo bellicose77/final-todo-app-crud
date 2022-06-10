@@ -8,7 +8,16 @@ const Home = () => {
         fetch('http://localhost:5000/tasks')
         .then(res=>res.json())
         .then(data=>setTasks(data))
-    },[])
+    },[]);
+    const handleDelete=(id)=>{
+      console.log(id);
+      fetch(`http://localhost:5000/task/${id}`,{
+          method:'DELETE'
+          
+      })
+      .then(res=>res.json())
+      .then(data=>console.log(data))
+  }
 
 
     return (
@@ -25,7 +34,7 @@ const Home = () => {
   </thead>
   <tbody>
       {
-          tasks.map(task=><DataShow key={task._id} task={task}></DataShow>)
+          tasks.map(task=><DataShow key={task._id} task={task} handleDelete={handleDelete}></DataShow>)
       }
      
    
