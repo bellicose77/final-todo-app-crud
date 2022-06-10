@@ -5,17 +5,18 @@ const UpdateTask = () => {
     const [singletask,setSingletask]=useState({})
     const {id} = useParams();
     useEffect(()=>{
-        fetch(`http://localhost:5000/tasks/${id}`)
+        fetch(`http://localhost:5000/task/${id}`)
         .then(res=>res.json())
         .then(data=>setSingletask(data))
     },[])
     return (
         <>
      <h2>this is update:{id}</h2>
+     <p>{singletask.name}</p>
     <Form >
     <Form.Group className="mb-3">
     <Form.Label>Name</Form.Label>
-    <Form.Control type="text" placeholder="Enter name" />
+    <Form.Control type="text" value={singletask.name} placeholder="Enter name" />
    </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
