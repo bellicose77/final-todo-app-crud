@@ -73,7 +73,7 @@ const Task = () => {
     <Form.Label>Password</Form.Label>
     <Form.Control type="password" onChange={handlePassword} placeholder="Password" />
     </Form.Group>
-    <Button onClick={()=>navigate('/home')} variant="primary" type="submit">
+    <Button  variant="primary" type="submit">
     Submit
   </Button>
 </Form>
