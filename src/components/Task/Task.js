@@ -8,8 +8,8 @@ const Task = () => {
      const [password,setPassword] = useState("");
      const navigate = useNavigate();
    
-     const handlInput = e =>{
-        
+     const handleInput = e =>{
+
      }
      const handleName = e =>{
          const Name = e.target.value;
@@ -66,7 +66,7 @@ const Task = () => {
     <Form onSubmit={handleSubmit}>
     <Form.Group className="mb-3">
     <Form.Label>Name</Form.Label>
-    <Form.Control type="text" onChange={handleName} placeholder="Enter name" />
+    <Form.Control name = "name" type="text" onChange={handleInput} placeholder="Enter name" />
    </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
