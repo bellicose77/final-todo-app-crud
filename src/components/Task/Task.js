@@ -4,12 +4,12 @@ import { useNavigate } from 'react-router-dom';
 
 const Task = () => {
      const [user,setUser]=useState("");
-     const [email,setEmail] = useState("");
-     const [password,setPassword] = useState("");
+    
      const navigate = useNavigate();
    
      const handleInput = e =>{
          const nameValue = e.target.name;
+         const fieldValue = e.target.value;
      }
      
     const handleSubmit = e =>{
