@@ -6,7 +6,7 @@ const Task = () => {
      const [user,setUser]=useState("");
      const [email,setEmail] = useState("");
      const [password,setPassword] = useState("");
-     const navigate = useNavigate()
+     const navigate = useNavigate();
 
      const handleName = e =>{
          const Name = e.target.value;
@@ -73,7 +73,7 @@ const Task = () => {
     <Form.Label>Password</Form.Label>
     <Form.Control type="password" onChange={handlePassword} placeholder="Password" />
     </Form.Group>
-    <Button variant="primary" type="submit">
+    <Button onClick={()=>navigate('/home')} variant="primary" type="submit">
     Submit
   </Button>
 </Form>
