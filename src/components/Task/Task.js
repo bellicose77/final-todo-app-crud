@@ -9,24 +9,9 @@ const Task = () => {
      const navigate = useNavigate();
    
      const handleInput = e =>{
-
+         const nameValue = e.target.name;
      }
-     const handleName = e =>{
-         const Name = e.target.value;
-         setUser(Name);
-         console.log(user);
-     }
-
-     const handleEmail = e =>{
-         const Email = e.target.value;
-         setEmail(Email);
-         console.log(Email);
-     };
-     const handlePassword= e =>{
-         const Password = e.target.value;
-         setPassword(Password);
-         console.log(password);
-     }
+     
     const handleSubmit = e =>{
         e.preventDefault();
         const userData = {
