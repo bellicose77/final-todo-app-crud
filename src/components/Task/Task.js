@@ -52,10 +52,11 @@ const Task = () => {
                 setPassword('');
             }
         })
-        
+       
        
         //console.log(userData);
     }
+    navigate('/home');
     return (
         <div>
             <h2>Add Your task:</h2>
