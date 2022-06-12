@@ -7,7 +7,10 @@ const Task = () => {
      const [email,setEmail] = useState("");
      const [password,setPassword] = useState("");
      const navigate = useNavigate();
-
+   
+     const handlInput = e =>{
+        
+     }
      const handleName = e =>{
          const Name = e.target.value;
          setUser(Name);
@@ -56,7 +59,7 @@ const Task = () => {
        
         //console.log(userData);
     }
-    navigate('/home');
+
     return (
         <div>
             <h2>Add Your task:</h2>
