@@ -40,9 +40,7 @@ const Task = () => {
         .then(data=>{
             if(data.insertedId){
                 alert("data inserted successfully");
-                setUser('');
-                setEmail('');
-                setPassword('');
+               
             }
         })
        
