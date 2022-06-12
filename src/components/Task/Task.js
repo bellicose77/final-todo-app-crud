@@ -3,7 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 const Task = () => {
-     const [user,setUser]=useState("");
+     const [userinfo,setUserinfo]=useState("");
     
      const navigate = useNavigate();
    
