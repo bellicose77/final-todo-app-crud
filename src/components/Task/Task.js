@@ -70,12 +70,12 @@ const Task = () => {
    </Form.Group>
     <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" onChange={handleEmail} placeholder="Enter email" />
+    <Form.Control name="email" type="email" onChange={handleInput} placeholder="Enter email" />
    </Form.Group>
 
     <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Password</Form.Label>
-    <Form.Control type="password" onChange={handlePassword} placeholder="Password" />
+    <Form.Control name="password" type="password" onChange={handleInput} placeholder="Password" />
     </Form.Group>
     <Button  variant="primary" type="submit">
     Submit
