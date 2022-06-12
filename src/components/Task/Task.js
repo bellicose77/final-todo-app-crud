@@ -3,21 +3,26 @@ import { Button, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 const Task = () => {
-     const [userinfo,setUserinfo]=useState("");
+     const [userinfo,setUserinfo]=useState({
+        name:'',
+        email:'',
+        password:''
+     });
     
      const navigate = useNavigate();
    
      const handleInput = e =>{
          const nameValue = e.target.name;
          const fieldValue = e.target.value;
+         setUserinfo({...userinfo,[nameValue]:fieldValue})
      }
      
     const handleSubmit = e =>{
         e.preventDefault();
         const userData = {
-            name:user,
-            email:email,
-            password:password
+            name:userinfo.name,
+            email:userinfo.email,
+            password:userinfo.password
 
         }
         fetch('http://localhost:5000/task',
