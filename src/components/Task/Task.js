@@ -44,7 +44,7 @@ const Task = () => {
             }
         })
        
-       
+         navigate('../home');
         //console.log(userData);
     }
 
