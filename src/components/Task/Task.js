@@ -37,12 +37,12 @@ const Task = () => {
        
         )
         .then(res =>res.json())
-        .then(data=>{
-            if(data.insertedId){
-                alert("data inserted successfully");
+        // .then(data=>{
+        //     if(data.insertedId){
+        //         alert("data inserted successfully");
                
-            }
-        })
+        //     }
+        // })
        
          navigate('../home');
         //console.log(userData);
