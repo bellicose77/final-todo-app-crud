@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import {useParams} from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 const UpdateTask = () => {
     const [singletask,setSingletask]=useState({name:'',email:'',password:''})
     const {id} = useParams();
+    const navigate = useNavigate();
     useEffect(()=>{
         fetch(`http://localhost:5000/task/${id}`)
         .then(res=>res.json())
