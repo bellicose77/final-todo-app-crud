@@ -42,7 +42,7 @@ const UpdateTask = () => {
         })
         .then(res=>res.json())
         .then(data=>console.log(data))
-        navigate('../home');
+        // navigate('../home');
     }
     return (
         <>
