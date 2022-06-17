@@ -25,7 +25,7 @@ const Task = () => {
             password:userinfo.password
 
         }
-        fetch('http://localhost:5000/task',
+        fetch('https://arcane-wave-03801.herokuapp.com/task',
         {
             method:'POST',
             headers:{

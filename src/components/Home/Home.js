@@ -6,13 +6,13 @@ const Home = () => {
     const [tasks,setTasks] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/tasks')
+        fetch('https://arcane-wave-03801.herokuapp.com/tasks')
         .then(res=>res.json())
         .then(data=>setTasks(data))
     },[]);
     const handleDelete=(id)=>{
       console.log(id);
-      fetch(`http://localhost:5000/task/${id}`,{
+      fetch(`https://arcane-wave-03801.herokuapp.com/task/${id}`,{
           method:'DELETE'
           
       })

@@ -6,7 +6,7 @@ const UpdateTask = () => {
     const {id} = useParams();
     const navigate = useNavigate();
     useEffect(()=>{
-        fetch(`http://localhost:5000/task/${id}`)
+        fetch(`https://arcane-wave-03801.herokuapp.com/task/${id}`)
         .then(res=>res.json())
         .then(data=>setSingletask(data))
     },[]);
@@ -31,7 +31,7 @@ const UpdateTask = () => {
     }
     const handleUpdateSubmit = e =>{
         e.preventDefault();
-        fetch(`http://localhost:5000/update/${id}`,{
+        fetch(`https://arcane-wave-03801.herokuapp.com/update/${id}`,{
             
         method:'PUT',
             headers:{
